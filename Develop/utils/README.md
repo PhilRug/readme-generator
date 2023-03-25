@@ -1,8 +1,11 @@
 # Professional ReadMe Generator
 
+Are you tired of writing readMes? Now you no longer have to! With this simple application using node.js all you have to do is answer a couple questions and a basic readme will be generated for you!
+* designers note: this is intended to be ran in the terminal
+
 ## Installation Instructions
 * in order to run this you need to run npm i inquirer@8.2.4 in the intergrated terminal
-
+* you must have Node.js v16
 
 ## Sources
 - starter code came from: https://github.com/coding-boot-camp/potential-enigma.git
