@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 inquirer.prompt([  
     {
@@ -37,7 +38,7 @@ inquirer.prompt([
         type: 'list',
         message: 'What license did you use for your app?',
         name: 'license',
-        choices: ['Apache License 2.0', 'MIT License', 'Eclipse Public License 2.0', 'Mozilla Public License 2.0', 'None'],
+        choices: ['Apache 2.0', 'MIT', 'GPL 3.0', 'BSD 3', 'None'],
     },
     {
         type: 'input',
@@ -57,34 +58,34 @@ inquirer.prompt([
 // TODO: Create a function to write README file
 function writeToFile({project, description, install, usage, contributors, test, license, github, email}) {
     const readmeString = `# ${project}
-    ${license}
-    ## Description
-    ${description}
+${license}
+## Description
+${description}
     
-    ## Table of Contents
+## Table of Contents
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#test)
-    - [Credits](#credits)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#test)
+- [Credits](#credits)
     
-    ## Installation
-    ${install}
+## Installation
+${install}
     
-    ## Usage
-    ${usage}
+## Usage
+${usage}
     
-    ## Testing
-    ${test}
+## Testing
+${test}
 
-    ## Credits
-    ${contributors}
+## Credits
+${contributors}
     
-    ## Questions
-    If you have any questions you can contact me at:
-    - Github https://github.com/${github}
-    - Email ${email}
-    `;
+## Questions
+If you have any questions you can contact me at:
+- Github https://github.com/${github}
+- Email ${email}
+`
 
 
 // TODO: Create a function to initialize app
