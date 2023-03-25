@@ -88,5 +88,5 @@ function writeToFile({project, description, install, usage, contributors, test, 
 
 
 // TODO: Create a function to initialize app
-fs.writeFile('test.md', readmeString, (err) => err ? console.error(error) : console.log("Success!"));
+fs.writeFile('README.md', readmeString, (err) => err ? console.error(error) : console.log("Success!"));
 }
