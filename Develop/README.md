@@ -1,29 +1,5 @@
-# pj
-    None
-    ## Description
-    test
-    
-    ## Table of Contents
-    
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#test)
-    - [Credits](#credits)
-    
-    ## Installation
-    idk
-    
-    ## Usage
-    easily
-    
-    ## Testing
-    test
+# Professional ReadMe Generator
 
-    ## Credits
-    no one
-    
-    ## Questions
-    If you have any questions you can contact me at:
-    - Github PhilRug
-    - email ruggierp.pj@gmail.com
-    
+## Sources
+- starter code came from: https://github.com/coding-boot-camp/potential-enigma.git
+- list for license code inspired by https://stackoverflow.com/questions/70553390/how-is-it-possible-in-node-js-to-display-list-of-options-via-console-log-and-ask
