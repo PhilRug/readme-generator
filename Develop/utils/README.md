@@ -11,3 +11,5 @@ Are you tired of writing readMes? Now you no longer have to! With this simple ap
 - starter code came from: https://github.com/coding-boot-camp/potential-enigma.git
 - list for license code inspired by https://stackoverflow.com/questions/70553390/how-is-it-possible-in-node-js-to-display-list-of-options-via-console-log-and-ask
 - markdown license badge: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
+- thank you Maverick from AskBCS for helping edit my license function to display properly

@@ -3,6 +3,36 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
+function renderLicenseBadge(license) {
+    let badge = '';
+    if(license != 'None') {
+      badge = '[![License](https://img.shields.io/badge/License-' + license + '-blue.svg)'
+    } else if(license === 'MIT') {
+      badge = '[![License](https://img.shields.io/badge/License-' + license + '-yellow.svg)'
+    }
+    return badge;
+  }
+
+  function renderLicenseLink(license) {
+    let licenseLink;
+    switch(license) {
+      case 'Apache 2.0':
+        licenseLink = 'https://opensource.org/licenses/Apache-2.0'
+        break;
+      case 'MIT':
+        licenseLink = 'https://opensource.org/licenses/MIT'
+        break;
+      case 'GPL 3.0':
+        licenseLink = 'https://www.gnu.org/licenses/gpl-3.0'
+        break;
+      case 'BSD 3':
+        licenseLink = 'https://opensource.org/licenses/BSD-3-Clause'
+        break;
+    }
+    return licenseLink;
+  }
+  
+
 inquirer.prompt([  
     {
         type: 'input',
@@ -58,7 +88,8 @@ inquirer.prompt([
 // TODO: Create a function to write README file
 function writeToFile({project, description, install, usage, contributors, test, license, github, email}) {
     const readmeString = `# ${project}
-${license}
+${renderLicenseBadge(license)}
+${renderLicenseLink(license)}
 ## Description
 ${description}
     
