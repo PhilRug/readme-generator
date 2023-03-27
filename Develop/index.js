@@ -89,5 +89,5 @@ If you have any questions you can contact me at:
 
 
 // TODO: Create a function to initialize app
-fs.writeFile('README.md', readmeString, (err) => err ? console.error(error) : console.log("Success!"));
+fs.writeFile('README.md', readmeString, generateMarkdown, (err) => err ? console.error(error) : console.log("Success!"));
 }
