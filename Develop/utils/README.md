@@ -6,6 +6,7 @@ Are you tired of writing readMes? Now you no longer have to! With this simple ap
 ## Installation Instructions
 * in order to run this you need to run npm i inquirer@8.2.4 in the intergrated terminal
 * you must have Node.js v16
+* https://drive.google.com/file/d/1IMeQS8BmE4eS3EoEHaK6nWmZIDwnBCZa/view 
 
 ## Sources
 - starter code came from: https://github.com/coding-boot-camp/potential-enigma.git
