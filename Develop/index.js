@@ -88,6 +88,7 @@ inquirer.prompt([
 // TODO: Create a function to write README file
 function writeToFile({project, description, install, usage, contributors, test, license, github, email}) {
     const readmeString = `# ${project}
+## License
 ${renderLicenseBadge(license)}
 ${renderLicenseLink(license)}
 ## Description
